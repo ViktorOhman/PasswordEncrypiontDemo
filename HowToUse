@@ -3,7 +3,7 @@ This is how to use this tiny demo.
 You begin By running PasswordSet. There you follow all the steps that the program tells you to.
 Secondly you run PasswordCheck and follow the same steps as above.
 
-For quick context if you are looking att the code, a file with [GenericVriableName]_E, means that that variable is Encrypted or will be.
-And a file with [GenericVriableName]_F means File.
-A variable with [GenericVriableName]_C means Confirm.
-Finally a variable with [GenericVriableName]_DC is Decrypted.
+For quick context if you are looking att the code, a file with [GenericVariableName]_E, means that that variable is Encrypted or will be.
+And a file with [GenericVariableName]_F means File.
+A variable with [GenericVariableName]_C means Confirm.
+Finally a variable with [GenericVariableName]_DC is Decrypted.
