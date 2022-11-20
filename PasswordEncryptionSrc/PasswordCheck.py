@@ -13,19 +13,17 @@ def decrypt(check):
         if I_password == 'None':
             pass
         else:
-            #Read the encrypted password from last script
+            #Read the encrypted password from file
             with open("thepassword.txt", "rb") as password_F:
-                password = password_F.read()
-            I_password_DC = Fernet(key).decrypt(password) #Decrypt it
+                password_E = password_F.read()
+            password = Fernet(key).decrypt(password_E) #Decrypt it
             I_password = bytes(I_password, 'utf-8') #Tranform our inputed password into bytes
-            if I_password_DC == I_password:
+            if password == I_password:
                 print('U are correct!')
-                print(I_password_DC)
                 time.sleep(10)
                 check = False
             else:
                 print('Wrong!')
-                print(I_password_DC)
                 time.sleep(5)
                 quit()
 
